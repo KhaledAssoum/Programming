@@ -12,7 +12,7 @@ namespace GoneHome
     {
         public UnityEvent onTriggered;
 
-        void onTriggerEnter(Collider other)
+        void OnTriggerEnter(Collider other)
         {
             if (other.name == "Player")
             {
