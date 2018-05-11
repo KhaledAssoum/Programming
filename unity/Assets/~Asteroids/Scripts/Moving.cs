@@ -9,6 +9,8 @@ using UnityEngine;
 // () - Parenthesis
 namespace Asteroids
 {
+    
+    }
     public class Moving : MonoBehaviour
     {
         // Member Variables
@@ -48,6 +50,10 @@ namespace Asteroids
         // Update is called once per frame
         void Update()
         {
+            if (Input.GetKey(KeyCode.A))
+            {
+                transform.Rotate(Vector3.forward, rotationSpeed);
+            }
             // Call 'Movement()' function
             Movement();
 
