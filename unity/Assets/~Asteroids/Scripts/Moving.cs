@@ -9,8 +9,6 @@ using UnityEngine;
 // () - Parenthesis
 namespace Asteroids
 {
-    
-    }
     public class Moving : MonoBehaviour
     {
         // Member Variables
