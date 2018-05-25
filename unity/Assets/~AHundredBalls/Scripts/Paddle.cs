@@ -18,9 +18,17 @@ namespace AHundredBalls
         // Update is called once per frame
         void Update()
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKey(KeyCode.DownArrow))
+            {
+                anim.SetBool("isOpen", true);
+            }
+            if(Input.GetKey(KeyCode.UpArrow))
+            {
+                
+                anim.SetBool("isOpen", false);
+            }
            
-            anim.SetTrigger("Open");
+           
         }
     }
 }
